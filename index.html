@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unicode解析ツール</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Unicode解析ツール</h1>
+        <p>テキストを入力し、各文字のUnicodeコードポイントやカテゴリを解析します。</p>
+        
+        <input type="text" id="inputText" placeholder="解析したいテキストを入力">
+        <button onclick="analyzeUnicode()">解析</button>
+
+        <h3>解析結果:</h3>
+        <table id="resultsTable">
+            <thead>
+                <tr>
+                    <th>文字</th>
+                    <th>Unicodeコードポイント</th>
+                    <th>カテゴリ</th>
+                </tr>
+            </thead>
+            <tbody id="resultsBody"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
